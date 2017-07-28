@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="glory.hafalandoaanakmuslim.AboutActivity"
+    android:background="@drawable/back9"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="About this application"
+    android:textColor="#0B6121"
+    android:id="@+id/txtjudulAbout"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:textSize="25sp"
+        android:layout_below="@+id/toolbar"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penjelasan about"
+        android:textColor="#0B6121"
+        android:id="@+id/txtpenjelAbout"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtjudulAbout"
+        />
+
+
+
+
+
+</RelativeLayout>

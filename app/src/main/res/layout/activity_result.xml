@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glory.hafalandoaanakmuslim.ResultActivity"
+    android:background="@drawable/back10"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Evaluasi"
+        android:textColor="#0B6121"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_below="@+id/toolbar"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#0B6121"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:id="@+id/txtUserResult"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skor:"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#0B6121"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtSkorResult"
+        android:layout_below="@id/txtUserResult"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 0 "
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#0B6121"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtHasilResult"
+        android:layout_below="@id/txtUserResult"
+        android:layout_toRightOf="@+id/txtUserResult"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glory.hafalandoaanakmuslim.AlarmActivity"
+    android:background="#6CC87C"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm Untuk Hafalan"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtjudulalarm"
+        android:layout_below="@+id/toolbar"
+        />
+
+
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jamanalog"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtjudulalarm"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetAlarm"
+        android:text="Set Alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/jamanalog"
+        android:layout_marginTop="10dp"
+        android:onClick="btnSetAlarm"
+
+        />
+
+    <TextView
+        android:id="@+id/alarmprompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSetAlarm"
+
+        />
+
+
+</RelativeLayout>
